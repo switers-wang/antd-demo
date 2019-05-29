@@ -1,0 +1,32 @@
+{
+    "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "targets": {
+              "node": "4"
+            }
+          }
+        ],
+        ["@babel/preset-react"]
+    ],
+    "plugins": [
+        [
+          "@babel/plugin-transform-runtime",
+          {
+            "absoluteRuntime": false,
+            "corejs": false,
+            "helpers": true,
+            "regenerator": true,
+            "useESModules": false
+          }
+        ],
+        [
+          "import", 
+          { 
+              "libraryName": "antd",
+              "style": true
+          }
+      ]
+    ]
+}
