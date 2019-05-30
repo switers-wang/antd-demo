@@ -1,5 +1,5 @@
 import React from 'react';
-import { Pagination } from 'antd';
+import Entry from './component/moduleA';
 import ReactDom from 'react-dom';
 
-ReactDom.render(<Pagination />, document.getElementById("test-antd"));
+ReactDom.render(<Entry />, document.getElementById("test-antd"));
