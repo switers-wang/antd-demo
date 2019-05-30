@@ -8,7 +8,6 @@ module.exports = {
         open: true,
         inline: true,
         progress: true,
-        port: 9999,
         contentBase: './'
     },
     module: {
@@ -35,8 +34,8 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'my redux',
-            template: './src/index.html'
+            title: 'react-antd',
+            template: path.join(__dirname, 'index.html')
         })
     ]
   };
