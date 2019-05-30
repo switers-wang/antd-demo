@@ -1,5 +1,5 @@
-const path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var path = require('path');
 module.exports = {
     devServer: {
         disableHostCheck: true,
@@ -28,8 +28,9 @@ module.exports = {
             },
         ]
     },
-    entry: './index.js',
+    entry: path.join(__dirname, 'src/index.js'),
     output: {
+      path: path.resolve(__dirname, 'dist'),
       filename: 'bundle.js'
     },
     plugins: [
